@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{92B5FC6A-5F03-597F-82C5-AE9D03B72A2F}</ProjectGuid>
+    <ProjectGuid>{14D8FA1D-FEA1-829E-8F95-FB012E817767}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,12 @@
     <Compile Include="Assets\Scripts\MineSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\EnemyTrigger.cs" />
+    <Compile Include="Assets\Scripts\Turrel.cs" />
+    <Compile Include="Assets\Scripts\BulletSpawn.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\Door.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\Key.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\KeyHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
