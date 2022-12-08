@@ -56,17 +56,17 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\KeyDoor\KeyHolder.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\Door.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
     <Compile Include="Assets\Scripts\MyEnemy.cs" />
     <Compile Include="Assets\Scripts\MineSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
-    <Compile Include="Assets\Scripts\EnemyTrigger.cs" />
-    <Compile Include="Assets\Scripts\Turrel.cs" />
     <Compile Include="Assets\Scripts\BulletSpawn.cs" />
+    <Compile Include="Assets\Scripts\EnemyTrigger.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\KeyDoor\Door.cs" />
+    <Compile Include="Assets\Scripts\Turrel.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\Key.cs" />
-    <Compile Include="Assets\Scripts\KeyDoor\KeyHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
