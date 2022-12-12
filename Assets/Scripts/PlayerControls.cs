@@ -11,6 +11,11 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private Vector3 m_Direction;
     [SerializeField] private KeyHolder m_KeyHolder;
 
+    [SerializeField] private GameObject m_Mine;
+    [SerializeField] private Transform m_MineSpawnPlace;
+    [SerializeField] private float m_FlightForce = 300f;
+
+
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -38,6 +43,12 @@ public class PlayerControls : MonoBehaviour
             {
                 m_KeyHolder.Use();
             }
+        }
+
+        if (Input.GetButtonDown("F"))
+        {
+            var mine = Instantiate(m_Mine, m_MineSpawnPlace.position, transform.rotation).GetComponent<Rigidbody>();
+            mine.AddForce(Vector3.forward * m_FlightForce);
         }
     }
 
