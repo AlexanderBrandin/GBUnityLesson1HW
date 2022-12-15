@@ -6,7 +6,7 @@ public class Mine : MonoBehaviour
 {
     [SerializeField] private int m_Damage;
     [SerializeField] private int m_ExplosionTime;
-
+    
     void Start()
     {
 
@@ -15,6 +15,7 @@ public class Mine : MonoBehaviour
     {
 
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
