@@ -4,5 +4,19 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    [SerializeField] private GameObject m_KyeType;
+    [SerializeField] private KyeType m_KeyType;
+
+    public enum KyeType
+    {
+        Brass,
+        Old,
+        Steel,
+        Back
+    }
+    
+    public KyeType GetKyeType()
+    {
+        return m_KeyType;
+    }
+        
 }

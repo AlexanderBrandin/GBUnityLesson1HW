@@ -970,6 +970,8 @@ GameObject:
   - component: {fileID: -4107326861004546751}
   - component: {fileID: 3177261704048441476}
   - component: {fileID: 1460941582930262822}
+  - component: {fileID: -4028642606816721834}
+  - component: {fileID: 1678629651980830647}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1055,6 +1057,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mine: {fileID: 0}
   m_MineSpawnPlace: {fileID: 0}
+--- !u!114 &-4028642606816721834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7098956234967703929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32eb92720a6ecc645b8f230657f9ce1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1678629651980830647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7098956234967703929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589f2732e9b57e14ca79ba13c0e0f28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Bullet: {fileID: 0}
+  m_BulletSpawnPlace: {fileID: 0}
 --- !u!1 &7098956234986958044
 GameObject:
   m_ObjectHideFlags: 0

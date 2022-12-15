@@ -1,6 +1,7 @@
 using Newtonsoft.Json.Converters;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
@@ -8,11 +9,13 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private float m_Speed = 3f;
     [SerializeField] private float m_RotationSpeed = 90f;
     [SerializeField] private Vector3 m_Direction;
+    [SerializeField] private KeyHolder m_KeyHolder;
 
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        m_KeyHolder = gameObject.GetComponent(typeof(KeyHolder)) as KeyHolder;
     }
 
     private void Update()
@@ -25,6 +28,16 @@ public class PlayerControls : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();
+        }
+
+        if (Input.GetButtonDown("E"))
+        {
+            Debug.Log("Use");
+
+            if(m_KeyHolder.m_Triggered)
+            {
+                m_KeyHolder.Use();
+            }
         }
     }
 
@@ -42,13 +55,13 @@ public class PlayerControls : MonoBehaviour
         bullet.CreateBullet();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Door Door = other.GetComponent<Door>();
+    //    private void OnTriggerStay(Collider other)
+    //    {
+    //        Door Door = other.GetComponent<Door>();
 
-        if (Input.GetButtonDown("Use"))
-        {
-            Door.UseDoor();
-        }
-    }
+    //        if (Input.GetButtonDown("Use"))
+    //        {
+    //            Door.UseDoor();
+    //        }
+    //    }
 }
